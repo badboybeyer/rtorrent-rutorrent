@@ -2,7 +2,7 @@ FROM i386/ubuntu
 USER root
 
 RUN apt-get update && apt-get install -y git && \
-    git clone https://github.com/diameter/rtorrent-rutorrent-shared.git a && \
+    git clone https://github.com/badboybeyer/rtorrent-rutorrent-shared.git a && \
     cp ./a/extra.list /etc/apt/sources.list.d/extra.list && \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y rtorrent unzip unrar mediainfo curl php-fpm php-cli php-geoip php-zip nginx wget ffmpeg supervisor php-xml libarchive-zip-perl libjson-perl libxml-libxml-perl irssi sox libssl-dev python-pip && \

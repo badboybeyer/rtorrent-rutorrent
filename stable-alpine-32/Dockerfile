@@ -5,7 +5,7 @@ USER root
 RUN apk add --no-cache rtorrent mediainfo unzip unrar curl php7-fpm php7 php7-json nginx wget ffmpeg supervisor git sox irssi py-pip && \
     pip install cfscrape && \
     ln -s /bin/stat /usr/bin && \
-    git clone -b alpine https://github.com/diameter/rtorrent-rutorrent-shared.git a && \
+    git clone -b alpine https://github.com/badboybeyer/rtorrent-rutorrent-shared.git a && \
     mkdir -p /var/www && \
     wget --no-check-certificate https://github.com/Novik/ruTorrent/archive/v3.9.tar.gz && \
     tar xzf v3.9.tar.gz && \

@@ -7,7 +7,7 @@ RUN apk add --no-cache rtorrent mediainfo unzip unrar curl php7-fpm php7 php7-js
     pip install cloudscraper && \
     apk del py-pip gcc g++ python-dev musl-dev libffi-dev openssl-dev && \
     ln -s /bin/stat /usr/bin && \
-    git clone -b alpine https://github.com/diameter/rtorrent-rutorrent-shared.git a && \
+    git clone -b alpine https://github.com/badboybeyer/rtorrent-rutorrent-shared.git a && \
     mkdir -p /var/www && cd /var/www && \
     git clone https://github.com/Novik/ruTorrent.git rutorrent && \
     rm -rf ./rutorrent/.git* && cd / && \
