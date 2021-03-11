@@ -21,5 +21,5 @@ RUN apt-get update && apt-get install -y git && \
 EXPOSE 80 443 49160 49161
 VOLUME /downloads
 
-CMD ["supervisord"]
+CMD ["supervisord", "-c", "/etc/supervisor.d/supervisord.ini"]
 

@@ -22,4 +22,4 @@ RUN apk add --no-cache rtorrent mediainfo unzip unrar curl php7-fpm php7 php7-js
 EXPOSE 80 443 49160 49161
 VOLUME /downloads
 
-CMD ["supervisord"]
+CMD ["supervisord", "-c", "/etc/supervisor.d/supervisord.ini"]
